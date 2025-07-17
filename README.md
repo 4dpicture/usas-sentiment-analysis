@@ -1,6 +1,3 @@
----
-
-````markdown
 # USAS-based Sentiment Analysis
 
 This repository contains code and resources for performing **sentiment analysis using USAS semantic tags** across multiple languages, including **Chinese, Dutch, French, English, Spanish**, and more. The methodology leverages the **PyMUSAS rule-based taggers** and **spaCy pipelines** for multilingual semantic analysis and emotional tagging.
@@ -96,12 +93,3 @@ These are mapped to sentiment categories as follows:
 ## 🤝 Contributions
 
 We welcome contributions for new languages, enhancements, or bug fixes! Feel free to submit a pull request or open an issue.
-
----
-
-```
-
----
-
-Let me know if you want this converted into an actual `README.md` file for download or want the format tailored to other language scripts.
-```
