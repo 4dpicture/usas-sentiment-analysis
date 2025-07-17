@@ -2,6 +2,7 @@
 
 This repository contains code and resources for performing **sentiment analysis using USAS semantic tags** across multiple languages, including **Chinese, Dutch, French, English, Spanish**, and more. The methodology leverages the **PyMUSAS rule-based taggers** and **spaCy pipelines** for multilingual semantic analysis and emotional tagging.
 
+
 ## 🔍 Overview
 
 USAS (UCREL Semantic Analysis System) provides semantic tagging which can be extended for sentiment analysis by focusing on **emotion-related tags** (e.g., happiness, anger, bravery, fear). This repository shows how to:
@@ -11,13 +12,20 @@ USAS (UCREL Semantic Analysis System) provides semantic tagging which can be ext
 - Classify sentence- and text-level sentiment (positive, negative, neutral)
 - Compute sentence-level and overall sentiment probabilities
 
+
 ## 📁 Languages Supported / 📄 Files
 
-- ✅ Chinese (`Chinese.ipynb`): Python script demonstrating sentiment analysis in **Chinese** using PyMUSAS and spaCy.
-- ✅ Dutch (`Dutch.ipynb`): Python script demonstrating sentiment analysis in **Dutch** using PyMUSAS and spaCy.
-- ✅ French (`French.ipynb`): Python script demonstrating sentiment analysis in **French** using PyMUSAS and spaCy.
-- ✅ English (`English.ipynb`): Python script demonstrating sentiment analysis in **English** using PyMUSAS and spaCy.
-- ✅ Spanish (`Spanish.ipynb`): Python script demonstrating sentiment analysis in **Spanish** using PyMUSAS and spaCy.
+| Language     | Status | Notebook File       | Description                                                       |
+|--------------|--------|---------------------|-------------------------------------------------------------------|
+| Chinese      | ✅     | `Chinese.ipynb`     | Sentiment analysis in **Chinese** using PyMUSAS and spaCy         |
+| Dutch        | ✅     | `Dutch.ipynb`       | Sentiment analysis in **Dutch** using PyMUSAS and spaCy           |
+| French       | ✅     | `French.ipynb`      | Sentiment analysis in **French** using PyMUSAS and spaCy          |
+| English      | ✅     | `English.ipynb`     | Sentiment analysis in **English** using PyMUSAS and spaCy         |
+| Spanish      | ✅     | `Spanish.ipynb`     | Sentiment analysis in **Spanish** using PyMUSAS and spaCy         |
+| Indonesian   | ⏳     | _coming soon_       | Sentiment analysis in **Indonesian** (in progress)                |
+| Italian      | ⏳     | _coming soon_       | Sentiment analysis in **Italian** (in progress)                   |
+| Portuguese   | ⏳     | _coming soon_       | Sentiment analysis in **Portuguese** (in progress)                |
+| Welsh        | ⏳     | _coming soon_       | Sentiment analysis in **Welsh** (in progress)                     |
 
 
 ## 📦 Installation
@@ -29,6 +37,7 @@ pip install https://github.com/UCREL/pymusas-models/releases/download/cmn_dual_u
 pip install colorama
 python -m spacy download zh_core_web_sm
 ````
+
 
 ## 🚀 Getting Started
 
@@ -49,6 +58,7 @@ cd usas-sentiment-analysis
 * `sentence_sentiment_prob(usas_emotion_tags)`: Computes sentence-level sentiment probabilities.
 * `text_sentiment_prob(text, pos, neg, neu)`: Computes text-level sentiment distribution.
 
+
 ## 🧪 Sample Use
 
 Example input:
@@ -64,6 +74,7 @@ Expected output:
 * Sentiment classification per sentence
 * Probabilities for each sentiment class
 
+
 ## 📊 Sentiment Classes
 
 The emotion tags used are based on the following USAS categories:
@@ -76,7 +87,7 @@ The emotion tags used are based on the following USAS categories:
 * E6-: Worry
 * …and others
 
-![Pipeline](images/usas_emotion_tags.png)
+![usas](images/usas_emotion_tags.png)
 
 
 These are mapped to sentiment categories as follows:
@@ -87,11 +98,13 @@ These are mapped to sentiment categories as follows:
 | `E*-`    | Negative  |
 | `E*`     | Neutral   |
 
+
 ## 📚 References
 
 * [UCREL Semantic Analysis System (USAS)](http://ucrel.lancs.ac.uk/usas/)
 * [PyMUSAS](https://github.com/UCREL/pymusas)
 * [spaCy](https://spacy.io)
+
 
 ## 🤝 Contributions
 
