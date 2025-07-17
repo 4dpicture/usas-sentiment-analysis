@@ -76,6 +76,9 @@ The emotion tags used are based on the following USAS categories:
 * E6-: Worry
 * …and others
 
+![Pipeline](images/usas_emotion_tags.png)
+
+
 These are mapped to sentiment categories as follows:
 
 | USAS Tag | Sentiment |
