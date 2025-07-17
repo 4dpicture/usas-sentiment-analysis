@@ -59,6 +59,30 @@ cd usas-sentiment-analysis
 * `text_sentiment_prob(text, pos, neg, neu)`: Computes text-level sentiment distribution.
 
 
+## 📊 Sentiment Classes
+
+The emotion tags used are based on the following USAS categories:
+
+* E4.1+: Happy
+* E4.1-: Sad
+* E5+: Bravery
+* E5-: Fear
+* E6+: Confidence
+* E6-: Worry
+* …and others
+
+![usas](images/usas_emotion_tags.png)
+
+
+These are mapped to sentiment categories as follows:
+
+| USAS Tag | Sentiment |
+| -------- | --------- |
+| `E*+`    | Positive  |
+| `E*-`    | Negative  |
+| `E*`     | Neutral   |
+
+
 ## 🧪 Sample Use
 
 ### 📝 Example Input
@@ -107,30 +131,6 @@ Hello everyone, I want to share my journey after surgery and my battle with canc
   Example:
 
   * `positive = 0.50, negative = 0.25, neutral = 0.25`
-
-
-## 📊 Sentiment Classes
-
-The emotion tags used are based on the following USAS categories:
-
-* E4.1+: Happy
-* E4.1-: Sad
-* E5+: Bravery
-* E5-: Fear
-* E6+: Confidence
-* E6-: Worry
-* …and others
-
-![usas](images/usas_emotion_tags.png)
-
-
-These are mapped to sentiment categories as follows:
-
-| USAS Tag | Sentiment |
-| -------- | --------- |
-| `E*+`    | Positive  |
-| `E*-`    | Negative  |
-| `E*`     | Neutral   |
 
 
 ## 📚 References
