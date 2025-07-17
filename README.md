@@ -61,18 +61,52 @@ cd usas-sentiment-analysis
 
 ## 🧪 Sample Use
 
-Example input:
+### 📝 Example Input
 
 ```text
-你好，同志们，我想和你们分享我在手术后对抗癌症的经历……
-```
+Hello everyone, I want to share my journey after surgery and my battle with cancer. I was diagnosed with colon cancer in May 2020 and had to undergo emergency surgery. The recovery was tough, but I stayed strong for my family. After months of treatment, I was declared cancer-free. Unfortunately, the cancer returned and spread to my liver. Despite the setbacks, I continued treatment and remained hopeful. I am now in remission again and grateful for each day.
+````
 
-Expected output:
+### ✅ Expected Output
 
-* USAS tags for each token
-* Emotion-tagged words
-* Sentiment classification per sentence
-* Probabilities for each sentiment class
+* **USAS tags for each token**
+  Each word or token is semantically tagged with USAS categories.
+  Example:
+
+  * `Hello` → `Z1` (Personal Names)
+  * `battle` → `X8+` (Hostility/Violence)
+  * `hopeful` → `E6+` (Confidence)
+
+* **Emotion-tagged words using USAS emotion categories**
+  Words expressing emotion are tagged with categories like:
+
+  * `E4.1+` → Happiness
+  * `E4.1-` → Sadness
+  * `E5+` → Bravery
+  * `E5-` → Fear
+    Example:
+  * `hopeful` → `E6+`
+  * `grateful` → `E4.2+`
+
+* **Sentiment classification per sentence**
+  Each sentence is classified based on the dominant emotional tone:
+
+  * Sentence 1 → Neutral
+  * Sentence 2 → Negative
+  * Sentence 3 → Positive
+  * Sentence 4 → Positive
+
+* **Sentence-level sentiment probabilities**
+  Probability scores for each class (positive, negative, neutral) per sentence.
+  Example:
+
+  * Sentence 3: `positive = 0.67, negative = 0.0, neutral = 0.33`
+
+* **Text-level sentiment distribution**
+  Overall sentiment summary for the entire text based on aggregated sentence scores.
+  Example:
+
+  * `positive = 0.50, negative = 0.25, neutral = 0.25`
 
 
 ## 📊 Sentiment Classes
